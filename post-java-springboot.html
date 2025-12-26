@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xây dựng REST API với Spring Boot</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"></div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="blog.html" class="active">Bài viết</a></li>
+                    <li><a href="about.html">Về tôi</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="post-detail">
+        <article>
+            <h1>Xây dựng REST API với Spring Boot</h1>
+            <div class="post-meta">
+                <span>📅 05/12/2025</span>
+                <span>•</span>
+                <span>7 phút đọc</span>
+            </div>
+            <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=600&q=80" alt="Spring Boot" class="post-cover">
+            <p>Spring Boot giúp xây dựng REST API nhanh chóng, dễ dàng với cấu hình tối giản. Bài viết này hướng dẫn bạn tạo API CRUD đơn giản cho ứng dụng quản lý sinh viên.</p>
+            <h2>Ví dụ controller đơn giản</h2>
+            <pre><code>@RestController
+@RequestMapping("/students")
+public class StudentController {
+    @GetMapping
+    public List<Student> getAll() {
+        // trả về danh sách sinh viên
+    }
+    @PostMapping
+    public void add(@RequestBody Student s) {
+        // thêm sinh viên
+    }
+}
+</code></pre>
+            <p>Bạn có thể mở rộng với Spring Data JPA, bảo mật với Spring Security...</p>
+        </article>
+    </main>
+    <footer>
+        <p>Made with by Kiệt. &copy; 2025.</p>
+    </footer>
+</body>
+</html>

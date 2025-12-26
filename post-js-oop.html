@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lập trình hướng đối tượng với JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"></div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="blog.html" class="active">Bài viết</a></li>
+                    <li><a href="about.html">Về tôi</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="post-detail">
+        <article>
+            <h1>Lập trình hướng đối tượng với JavaScript</h1>
+            <div class="post-meta">
+                <span>📅 16/12/2025</span>
+                <span>•</span>
+                <span>6 phút đọc</span>
+            </div>
+            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=600&q=80" alt="OOP JS" class="post-cover">
+            <p>JavaScript hỗ trợ lập trình hướng đối tượng (OOP) với ES6 class. Bài viết này sẽ giúp bạn hiểu cách xây dựng class, kế thừa và đa hình trong JS.</p>
+            <h2>Ví dụ về class và object</h2>
+            <pre><code>class Person {
+    constructor(name) {
+        this.name = name;
+    }
+    sayHello() {
+        console.log(`Xin chào, tôi là ${this.name}`);
+    }
+}
+
+const p = new Person("Kiệt");
+p.sayHello(); // Xin chào, tôi là Kiệt
+</code></pre>
+            <h2>Kế thừa và đa hình</h2>
+            <pre><code>class Animal {
+    speak() {
+        console.log("Animal sound");
+    }
+}
+class Dog extends Animal {
+    speak() {
+        console.log("Gâu gâu");
+    }
+}
+const a = new Dog();
+a.speak(); // Gâu gâu
+</code></pre>
+            <p>OOP giúp code JS dễ bảo trì, mở rộng và tái sử dụng.</p>
+        </article>
+    </main>
+    <footer>
+        <p>Made with by Kiệt. &copy; 2025.</p>
+    </footer>
+</body>
+</html>

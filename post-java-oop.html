@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lập trình hướng đối tượng với Java</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"></div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="blog.html" class="active">Bài viết</a></li>
+                    <li><a href="about.html">Về tôi</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="post-detail">
+        <article>
+            <h1>Lập trình hướng đối tượng với Java</h1>
+            <div class="post-meta">
+                <span>📅 15/12/2025</span>
+                <span>•</span>
+                <span>8 phút đọc</span>
+            </div>
+            <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80" alt="OOP Java" class="post-cover">
+            <p>Lập trình hướng đối tượng (OOP) là nền tảng của Java. Bài viết này sẽ giúp bạn hiểu rõ các khái niệm cơ bản như class, object, kế thừa, đa hình, đóng gói và trừu tượng hóa.</p>
+            <h2>Ví dụ về class và object</h2>
+            <pre><code>public class Person {
+    private String name;
+    public Person(String name) {
+        this.name = name;
+    }
+    public void sayHello() {
+        System.out.println("Xin chào, tôi là " + name);
+    }
+}
+
+Person p = new Person("Kiệt");
+p.sayHello(); // Xin chào, tôi là Kiệt
+</code></pre>
+            <h2>Kế thừa và đa hình</h2>
+            <pre><code>public class Animal {
+    public void speak() {
+        System.out.println("Animal sound");
+    }
+}
+public class Dog extends Animal {
+    @Override
+    public void speak() {
+        System.out.println("Gâu gâu");
+    }
+}
+Animal a = new Dog();
+a.speak(); // Gâu gâu
+</code></pre>
+            <p>OOP giúp code dễ bảo trì, mở rộng và tái sử dụng.</p>
+        </article>
+    </main>
+    <footer>
+        <p>Made with by Kiệt. &copy; 2025.</p>
+    </footer>
+</body>
+</html>

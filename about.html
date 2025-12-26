@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Về tôi - Kiệt's Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        .about-section { background: #fff; padding: 44px 36px 36px 36px; border-radius: 18px; box-shadow: 0 4px 24px rgba(46,125,50,0.09); margin-bottom: 36px; max-width: 820px; margin-left: auto; margin-right: auto; }
+        .about-header { display: flex; align-items: center; gap: 36px; margin-bottom: 38px; }
+        .about-avatar { width: 170px; height: 170px; border-radius: 50%; object-fit: cover; border: 5px solid #e8f5e9; box-shadow: 0 2px 12px rgba(46,125,50,0.08); }
+        .about-title h1 { font-size: 2.1rem; margin-bottom: 10px; color: #2E7D32; font-weight: 700; }
+        .about-title p { font-size: 1.13rem; color: #444; margin-bottom: 8px; }
+        .about-quote { font-style: italic; color: #2e7d32; background: #f4f7fa; border-left: 4px solid #b2dfdb; padding: 12px 22px; border-radius: 0 12px 12px 0; margin: 18px 0 24px 0; font-size: 1.04em; }
+        .skill-list { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 15px; }
+        .skill-tag { background: #e8f5e9; color: #388e3c; padding: 5px 15px; border-radius: 20px; font-weight: 500; font-size: 0.97rem; letter-spacing: 0.2px; }
+        .about-goals, .about-facts { margin: 32px 0 0 0; }
+        .about-goals h2, .about-facts h2 { color: #2E7D32; font-size: 1.18rem; margin-bottom: 10px; }
+        .about-goals ul, .about-facts ul { margin-left: 20px; line-height: 2; }
+        .about-facts { background: #f4f7fa; border-radius: 10px; padding: 18px 22px; margin-top: 30px; }
+        @media (max-width: 900px) {
+            .about-section { padding: 18px 4vw; }
+        }
+        @media (max-width: 768px) {
+            .about-header { flex-direction: column; text-align: center; gap: 18px; }
+            .about-section { padding: 12px 2vw; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"></div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="blog.html">Bài viết</a></li>
+                    <li><a href="about.html" class="active">Về tôi</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container" style="display: block; margin-top: 40px; max-width: 900px;">
+        
+        <div class="about-section">
+            <div class="about-header">
+                <img src="images/avata.jpg" alt="Ảnh đại diện Vũ Gia Kiệt" class="about-avatar">
+                <div class="about-title">
+                    <h1>Xin chào, mình là Vũ Gia Kiệt!</h1>
+                    <p>Sinh viên năm 4 chuyên ngành Công nghệ phần mềm, đam mê lập trình backend và chia sẻ kiến thức.</p>
+                    <div class="about-quote">“Học lập trình không chỉ để đi làm, mà còn để hiểu và sáng tạo ra thế giới số của riêng mình.”</div>
+                    <div class="skill-list">
+                        <span class="skill-tag">Java Core</span>
+                        <span class="skill-tag">Spring Boot</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">Git</span>
+                    </div>
+                </div>
+            </div>
+
+            <h2>📚 Vài dòng về mình</h2>
+            <p style="margin-bottom: 20px;">
+                Mình là sinh viên năm 4, hiện đang học tại trường đại học Công Nghệ TP HCM chuyên ngành Công nghệ phần mềm. Mình bắt đầu làm quen với lập trình từ năm nhất, chủ yếu tự học qua các dự án nhỏ, tài liệu online và các khóa học miễn phí.
+            </p>
+            <p style="margin-bottom: 20px;">
+                Mình yêu thích backend, đặc biệt là Java và Spring Boot. Ngoài ra, mình cũng thích tìm hiểu về JavaScript, SQL và các công nghệ web hiện đại. Blog này là nơi mình ghi lại những gì đã học, những trải nghiệm thực tế và cả những khó khăn, thất bại trên hành trình trở thành lập trình viên.
+            </p>
+            <div class="about-goals">
+                <h2>🎯 Mục tiêu cá nhân</h2>
+                <ul>
+                    <li>✔️ Nắm vững kiến thức nền tảng về Java, Spring Boot và lập trình web.</li>
+                    <li>✔️ Tham gia các dự án thực tế để tích lũy kinh nghiệm teamwork.</li>
+                    <li>✔️ Chia sẻ kiến thức, kinh nghiệm cho các bạn sinh viên khác qua blog.</li>
+                    <li>✔️ Không ngừng học hỏi, cập nhật công nghệ mới.</li>
+                </ul>
+            </div>
+            <div class="about-facts">
+                <h2>💡 Một chút về mình ngoài code</h2>
+                <ul>
+                    <li>Thích nghe nhạc, xem phim và chơi game.</li>
+                    <li>Luôn sẵn sàng học hỏi từ mọi người xung quanh.</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Made with by Kiệt. &copy; 2025.</p>
+    </footer>
+</body>
+</html>

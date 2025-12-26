@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khám phá async/await trong JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"></div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="blog.html" class="active">Bài viết</a></li>
+                    <li><a href="about.html">Về tôi</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="post-detail">
+        <article>
+            <h1>Async/Await: Làm chủ bất đồng bộ trong JavaScript</h1>
+            <div class="post-meta">
+                <span>📅 25/12/2025</span>
+                <span>•</span>
+                <span>7 phút đọc</span>
+            </div>
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80" alt="Async Await Technology" class="post-cover">
+            <div class="toc">
+                <div class="toc-title">Mục lục</div>
+                <ul>
+                    <li><a href="#gioi-thieu">Giới thiệu</a></li>
+                    <li><a href="#co-ban">Cơ bản về Async/Await</a></li>
+                    <li><a href="#so-sanh">So sánh với Promises</a></li>
+                    <li><a href="#ung-dung">Ứng dụng thực tế</a></li>
+                    <li><a href="#tips">Tips & Lưu ý</a></li>
+                    <li><a href="#faq">Câu hỏi thường gặp</a></li>
+                </ul>
+            </div>
+            <h2 id="gioi-thieu">Giới thiệu</h2>
+            <p>Async/await là một tính năng của ES2017 giúp viết asynchronous code trông giống như synchronous code, làm cho code JavaScript dễ đọc, dễ debug và bảo trì hơn rất nhiều. Đây là một bước tiến lớn so với callback hell và promise chains.</p>
+            <blockquote>
+                "Async/await giúp code bất đồng bộ trở nên gọn gàng, dễ hiểu và giảm thiểu lỗi logic khi xử lý nhiều thao tác nối tiếp."
+            </blockquote>
+            <h2 id="co-ban">Cơ bản về Async/Await</h2>
+            <h3>Async Functions</h3>
+            <p>Một async function luôn trả về một Promise.</p>
+            <pre><code>// Async function declaration
+async function fetchDataA() {
+  return "Data fetched";
+}
+
+// Async function expression
+const fetchData2 = async function () {
+  return "Data fetched";
+};
+
+// Async arrow function
+const fetchData3 = async () => {
+  return "Data fetched";
+};
+
+// Tất cả đều trả về Promise
+fetchDataA().then((result) => console.log(result)); // "Data fetched"
+</code></pre>
+            <h3>Await Operator</h3>
+            <p>Await operator được sử dụng bên trong async functions để chờ một Promise được resolve.</p>
+            <pre><code>async function getUserData() {
+  // Giả lập API call
+  const response = await fetch("https://api.example.com/user");
+  const userData = await response.json();
+  return userData;
+}
+
+// Sử dụng
+getUserData()
+  .then((user) => console.log(user))
+  .catch((error) => console.error(error));
+</code></pre>
+            <h2 id="so-sanh">So sánh với Promises</h2>
+            <p>Async/await giúp code ngắn gọn, dễ đọc hơn so với promise chains, đặc biệt khi có nhiều thao tác bất đồng bộ liên tiếp.</p>
+        </article>
+    </main>
+    <footer>
+        <p>Made with by Kiệt. &copy; 2025.</p>
+    </footer>
+</body>
+</html>

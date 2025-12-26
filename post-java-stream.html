@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạm biệt vòng lặp For với Java Stream API</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"></div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="blog.html" class="active">Bài viết</a></li>
+                    <li><a href="about.html">Về tôi</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="post-detail">
+        <article>
+            <h1>Tạm biệt vòng lặp For với Java Stream API</h1>
+            <div class="post-meta">
+                <span>📅 20/12/2025</span>
+                <span>•</span>
+                <span>6 phút đọc</span>
+            </div>
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80" alt="Java Stream API" class="post-cover">
+            <p>Java Stream API là một trong những tính năng mạnh mẽ nhất được giới thiệu từ Java 8, giúp xử lý tập hợp dữ liệu một cách ngắn gọn, linh hoạt và dễ đọc hơn rất nhiều so với các vòng lặp truyền thống.</p>
+            <h2>Ví dụ: Lọc danh sách với Stream</h2>
+            <pre><code>List<String> names = Arrays.asList("Kiet", "An", "Bao", "Khanh");
+List<String> filtered = names.stream()
+    .filter(name -> name.startsWith("K"))
+    .collect(Collectors.toList());
+System.out.println(filtered); // [Kiet, Khanh]
+</code></pre>
+            <h2>So sánh với vòng lặp for truyền thống</h2>
+            <pre><code>List<String> filtered = new ArrayList<>();
+for (String name : names) {
+    if (name.startsWith("K")) {
+        filtered.add(name);
+    }
+}
+System.out.println(filtered); // [Kiet, Khanh]
+</code></pre>
+            <h2>Lợi ích khi dùng Stream API</h2>
+            <ul>
+                <li>Code ngắn gọn, dễ đọc</li>
+                <li>Dễ kết hợp nhiều thao tác (filter, map, reduce...)</li>
+                <li>Hỗ trợ xử lý song song dễ dàng</li>
+            </ul>
+        </article>
+    </main>
+    <footer>
+        <p>Made with by Kiệt. &copy; 2025.</p>
+    </footer>
+</body>
+</html>

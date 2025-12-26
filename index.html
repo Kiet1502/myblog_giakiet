@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ - </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"></div>
+            <nav>
+                <div class="nav-links">
+                    <a href="index.html" class="active">Trang chủ</a>
+                    <a href="blog.html">Bài viết</a>
+                    <a href="about.html">Về tôi</a>
+                    <a href="contact.html">Liên hệ</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="intro-section">
+        <div class="intro-flex">
+            <div class="intro-avatar-wrap">
+                <img src="images/avata.jpg" alt="Vũ Gia Kiệt" class="intro-avatar">
+            </div>
+            <div class="intro-info">
+                <h1>Xin chào, mình là <br>Vũ Gia Kiệt 👋</h1>
+                <p>Sinh viên năm 4 chuyên ngành CNPM. Mình viết blog để chia sẻ kiến thức về Java, Spring Boot và hành trình trở thành Dev chuyên nghiệp.</p>
+                <a href="about.html" class="btn">Tìm hiểu thêm</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-posts">
+        <div class="container" style="display: block;">
+            <div class="section-wrapper">
+                <h2 class="section-title">Bài viết nổi bật</h2>
+                <div class="section-box">
+                    <div class="grid-posts-2">
+                        <article class="card">
+                            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500" alt="Java Core">
+                            <div class="card-body">
+                                <div><span class="tag java">JAVA CORE</span></div>
+                                <h3>Tạm biệt vòng lặp For với Java Stream API</h3>
+                                <p>Tại sao bạn nên dùng Stream để code ngắn gọn...</p>
+                                <a href="blog.html" class="btn btn-small">Xem ngay</a>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <img src="https://images.unsplash.com/photo-1555099962-4199c345e5dd?w=500" alt="Spring Boot">
+                            <div class="card-body">
+                                <div><span class="tag js">SPRING BOOT</span></div>
+                                <h3>5 extension giúp code JavaScript nhanh hơn</h3>
+                                <p>Các tiện ích VSCode giúp tăng tốc độ lập trình JS.</p>
+                                <a href="blog.html" class="btn btn-small">Xem ngay</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Made with <i class="" style="color: #e25555;"></i> by Kiệt. &copy; 2025.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ - Kiệt's Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        .contact-wrapper {
+            max-width: 600px;
+            margin: 60px auto;
+            text-align: center;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        .profile-img-small {
+            width: 100px; height: 100px; border-radius: 50%; object-fit: cover;
+            border: 3px solid #f1f1f1; margin-bottom: 15px;
+        }
+        .bio-name { font-size: 1.5rem; font-weight: bold; margin-bottom: 5px; color: #2E7D32; }
+        .bio-desc { color: #666; margin-bottom: 30px; }
+
+        /* --- Style mới cho danh sách Link --- */
+        .link-list {
+            list-style: none; /* Bỏ dấu chấm đầu dòng */
+            padding: 0;
+            text-align: left;
+        }
+        .link-item {
+            display: flex;
+            align-items: center;
+            padding: 15px 0;
+            border-bottom: 1px solid #eee; /* Đường gạch ngang ngăn cách */
+        }
+        .link-item:last-child { border-bottom: none; } /* Bỏ gạch ngang ở mục cuối */
+
+        .icon-box {
+            width: 40px;
+            font-size: 1.5rem;
+            text-align: center;
+            margin-right: 15px;
+            color: #555;
+        }
+
+        .link-content h4 {
+            margin: 0;
+            font-size: 0.85rem;
+            color: #888;
+            text-transform: uppercase;
+        }
+
+        .link-content a {
+            color: #007bff; /* Màu xanh của link */
+            font-size: 1rem;
+            text-decoration: none;
+            word-break: break-all; /* Tự xuống dòng nếu link quá dài */
+        }
+        .link-content a:hover {
+            text-decoration: underline;
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"></div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="blog.html">Bài viết</a></li>
+                    <li><a href="about.html">Về tôi</a></li>
+                    <li><a href="contact.html" class="active">Liên hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="contact-wrapper">
+        
+        <img src="images/avata.jpg" alt="Ảnh đại diện Vũ Gia Kiệt" class="profile-img-small">
+        <h2 class="bio-name">Vũ Gia Kiệt</h2>
+        <p class="bio-desc">Thông tin liên hệ chi tiết:</p>
+
+        <ul class="link-list">
+            <li class="link-item">
+                <div class="icon-box"><i class="fab fa-facebook" style="color: #1877F2;"></i></div>
+                <div class="link-content">
+                    <h4>Facebook</h4>
+                    <a href="https://www.facebook.com/vkit152/" target="_blank">https://www.facebook.com/vkit152/</a>
+                </div>
+            </li>
+
+            <li class="link-item">
+                <div class="icon-box"><i class="fab fa-instagram" style="color: #E1306C;"></i></div>
+                <div class="link-content">
+                    <h4>Instagram</h4>
+                    <a href="https://www.instagram.com/_vkit/" target="_blank">https://www.instagram.com/_vkit/</a>
+                </div>
+            </li>
+
+            <li class="link-item">
+                <div class="icon-box"><i class="fab fa-github" style="color: #333;"></i></div>
+                <div class="link-content">
+                    <h4>GitHub</h4>
+                    <a href="https://github.com/Kiet1502" target="_blank">https://github.com/Kiet1502</a>
+                </div>
+            </li>
+
+            <li class="link-item">
+                <div class="icon-box"><i class="fas fa-envelope" style="color: #EA4335;"></i></div>
+                <div class="link-content">
+                    <h4>Email</h4>
+                    <a href="mailto:vkey150204@gmail.com">vkey150204@gmail.com</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>Made with by Kiệt. &copy; 2025.</p>
+    </footer>
+</body>
+</html>
